@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Gradebook</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Gradebook</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fees.html">School Fees Collection</a></li>
+            <li><a href="schedule.html">Class Schedule</a></li>
+            <li><a href="attendance.html">Class Attendance</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Enter Grades</h2>
+        <form action="php/save_gradebook.php" method="POST">
+            <label for="student_name">Student Name:</label>
+            <input type="text" id="student_name" name="student_name" required><br><br>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" required><br><br>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 School Information Management System</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

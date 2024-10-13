@@ -1,0 +1,4 @@
+mkdir sims
+cd sims
+npm init -y
+npm install express mongoose ejs body-parser

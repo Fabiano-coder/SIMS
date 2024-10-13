@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Fees Collection</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>School Fees Collection</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gradebook.html">Online Gradebook</a></li>
+            <li><a href="schedule.html">Class Schedule</a></li>
+            <li><a href="attendance.html">Class Attendance</a></li>
+            <li><a href="communication.html">Communication</a></li>
+            <li><a href="analytics.html">Analytics & Reports</a></li>
+            <li><a href="pocket_money.html">Pocket Money</a></li>
+            <li><a href="bank_accounts.html">Bank Accounts</a></li>
+            <li><a href="billing.html">Billing Vs Actual</a></li>
+            <li><a href="financial_management.html">Financial Management</a></li>
+            <li><a href="asset_register.html">Asset Register</a></li>
+            <li><a href="vendor_management.html">Vendor Management</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Enter Fee Payment</h2>
+        <form action="php/save_fees.php" method="POST">
+            <label for="student_name">Student Name:</label>
+            <input type="text" id="student_name" name="student_name" required><br><br>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" required><br><br>
+
+            <label for="amount_paid">Amount Paid:</label>
+            <input type="number" id="amount_paid" name="amount_paid" step="0.01" required><br><br>
+
+            <label for="payment_date">Payment Date:</label>
+            <input type="date" id="payment_date" name="payment_date" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 School Information Management System</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
